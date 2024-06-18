@@ -1,0 +1,85 @@
+#root {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+
+html {
+  overscroll-behavior: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+a{
+  text-decoration: none;
+}
+.app{
+  display: flex;
+  flex-direction: row;
+  background-color:#f7f9fb;
+  height: 100%;
+  overflow: hidden;
+}
+.nav {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-right: 20px;
+  background: #4f5866;
+  padding-top: 30px;
+  overflow-y:scroll;
+  overflow-x: hidden;
+  padding-bottom: 30px;
+}
+.nav::-webkit-scrollbar{
+  width:10px;
+  height:10px;
+  /**/
+}
+.nav::-webkit-scrollbar-track{
+  background: rgb(239, 239, 239);
+  border-radius:2px;
+}
+.nav::-webkit-scrollbar-thumb{
+  background: #bfbfbf;
+  border-radius:10px;
+}
+.nav::-webkit-scrollbar-thumb:hover{
+  background: #333;
+}
+.nav::-webkit-scrollbar-corner{
+  background: #333;
+}
+.default {
+  text-decoration: none;
+  color: #fff;
+  height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+  background: #4f5866;
+  padding-left: 16px;
+  margin-bottom: 6px;
+}
+.active{
+  color: #fff;
+  background: #0065fe;
+}
+.iframeshow{
+  display: flex;
+  flex-direction: column;
+  /* width: 288px; */
+  flex: 1;
+  min-width: 288px;
+  height: 600px;
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 0 0 11.2px #090a0d,0 0 0 12.8px #9fa3a8,0 4px 20px 12.8px rgba(0,0,0,.1);
+  padding: 22px 8px 0;
+  margin-top: 10px;
+  margin-right: 16px;
+  overflow-y: scroll;
+}

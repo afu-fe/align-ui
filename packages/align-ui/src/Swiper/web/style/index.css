@@ -1,0 +1,70 @@
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+/* 最外层容器 */
+.swiper {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 0; /* js 设置 */
+  height: 0; /* js 设置 */
+  position: relative;
+}
+
+/* 包裹 slide 的列表 */
+.swiper .swiper-container {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  display: flex;
+  transition: left 0.5s;
+  /* 以下为滑动相关逻辑 */
+  width: 0; /* js 设置，值为 slideCount * 100% */
+  left: 0; /* js 设置，值为 currentSlideIdx */
+}
+
+/* slide 所在的 item 元素 */
+.swiper .swiper-container .swiper-item {
+  background-color: rgb(138, 185, 226);
+  border: 1px solid #fecccc;
+  width: 0; /* js 设置 */
+  height: 0; /* js 设置 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 左右切换按钮 */
+.swiper-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.swiper-button.prev {
+  left: 0;
+}
+.swiper-button.next {
+  right: 0;
+}
+
+/* 分页按钮 */
+.swiper-dots-group {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

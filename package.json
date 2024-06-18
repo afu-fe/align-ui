@@ -1,0 +1,17 @@
+{
+  "name": "align-ui",
+  "private": true,
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "demo": "cd apps/rn-web-vite && pnpm dev",
+    "build": "cd packages/align-ui && pnpm build",
+    "test": "cd packages/align-ui && pnpm test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1"
+  }
+}
